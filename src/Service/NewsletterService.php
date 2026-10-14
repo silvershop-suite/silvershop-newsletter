@@ -196,6 +196,7 @@ class NewsletterService
         try {
             Email::create()
                 ->setHTMLTemplate('SilverShop\\Newsletter\\Email\\ConfirmEmail')
+                ->setPlainTemplate('SilverShop\\Newsletter\\Email\\ConfirmEmailPlain')
                 ->setData($data)
                 ->setTo($subscription->Email)
                 ->setFrom($this->senderEmail(), $this->senderName())
