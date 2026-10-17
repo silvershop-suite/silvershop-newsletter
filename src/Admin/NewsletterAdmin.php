@@ -18,7 +18,7 @@ class NewsletterAdmin extends ModelAdmin
 
     private static string $menu_title = 'Subscribers';
 
-    private static string $menu_icon_class = 'font-icon-email';
+    private static string $menu_icon_class = 'font-icon-block-users';
 
     private static int $menu_priority = 0;
 
