@@ -128,3 +128,7 @@ run (core is a soft dependency, absent from the core-less analysis); they are ex
 ## License
 
 BSD-3-Clause.
+
+## Credits
+
+Built and maintained by **Remy Vaartjes** (<remy@xd.nl>) — part of the **SilverShop-Suite**.
