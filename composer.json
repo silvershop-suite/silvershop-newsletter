@@ -1,5 +1,5 @@
 {
-    "name": "silvershop/newsletter",
+    "name": "silvershop-suite/newsletter",
     "description": "Newsletter signup, marketing consent, double opt-in and queued ESP synchronisation for SilverShop. Works on any SilverStripe 6 site; checkout and order integration light up when silvershop/core is present.",
     "type": "silverstripe-vendormodule",
     "keywords": ["silverstripe", "silvershop", "ecommerce", "newsletter", "subscribe", "email-marketing", "consent", "esp"],
@@ -31,7 +31,7 @@
     },
     "suggest": {
         "silvershop/core": "Enables the checkout opt-in checkbox, the account email-preferences section and ecommerce order sync; the module is inert on those surfaces without it.",
-        "silvershop/store-profile": "Uses the central shop name and contact email as the sender of confirmation / double-opt-in emails.",
+        "silvershop-suite/store-profile": "Uses the central shop name and contact email as the sender of confirmation / double-opt-in emails.",
         "silverstripe/spamprotection": "Protects the public signup form with the site's configured spam protector.",
         "tractorcow/silverstripe-fluent": "Stores the subscriber's locale and keeps per-locale lists in sync with the ESP."
     },

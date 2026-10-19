@@ -1,4 +1,4 @@
-# silvershop/newsletter
+# silvershop-suite/newsletter
 
 Newsletter signup, marketing consent, double opt-in and queued ESP (email-service-provider) synchronisation
 for SilverStripe 6 / SilverShop.
@@ -6,7 +6,7 @@ for SilverStripe 6 / SilverShop.
 Every shop gets a **working local newsletter list out of the box** — a footer/sidebar signup form, a checkout
 opt-in checkbox, GDPR-friendly double opt-in, one-click unsubscribe, an explicit timestamped marketing-consent
 record, a subscribers admin and report — with **zero ESP configured**. Adding an ESP is purely additive: install
-a thin adapter module (e.g. [`silvershop/newsletter-campaignmonitor`](https://github.com/RVXD/silvershop-newsletter-campaignmonitor)),
+a thin adapter module (e.g. [`silvershop-suite/newsletter-campaignmonitor`](https://github.com/RVXD/silvershop-newsletter-campaignmonitor)),
 set it as the active provider, and every subscriber change is pushed to the ESP as a retryable, auditable
 background job. The ESP owns the campaigns; this module owns capture, consent and sync.
 
@@ -23,13 +23,13 @@ double opt-in, unsubscribe, the admin/report and ESP sync all work on any Silver
 checkbox, the account "Email preferences" section and the order/ecommerce hook points only light up when
 `silvershop/core` is installed (attached behind `class_exists()` guards in `_config.php`).
 
-Other soft dependencies, all guarded: `silvershop/store-profile` (sender identity), `silverstripe/spamprotection`
+Other soft dependencies, all guarded: `silvershop-suite/store-profile` (sender identity), `silverstripe/spamprotection`
 (form protection), `tractorcow/silverstripe-fluent` (per-locale lists).
 
 ## Installation
 
 ```bash
-composer require silvershop/newsletter
+composer require silvershop-suite/newsletter
 ```
 
 Then run `dev/build?flush=1`.
@@ -71,7 +71,7 @@ marketing emails on it:
 ```php
 use SilverShop\Newsletter\Service\NewsletterConsent;
 
-if (!\SilverStripe\Core\Manifest\ModuleLoader::inst()->getManifest()->getModule('silvershop/newsletter')
+if (!\SilverStripe\Core\Manifest\ModuleLoader::inst()->getManifest()->getModule('silvershop-suite/newsletter')
     || NewsletterConsent::has($email)) {
     // send marketing email
 }
