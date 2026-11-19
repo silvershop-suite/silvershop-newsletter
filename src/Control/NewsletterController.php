@@ -23,7 +23,7 @@ use SilverStripe\Security\Security;
 /**
  * Public endpoint for the newsletter: the footer/sidebar signup form POST, the tokenised double-opt-in
  * confirm and one-click unsubscribe landings, and the per-provider ESP webhook. Routed at `newsletter`
- * (see _config/routes.yml), mirroring silvershop/reviews' ReviewInvitationController.
+ * (see _config/routes.yml), mirroring silvershop-suite/reviews' ReviewInvitationController.
  */
 class NewsletterController extends Controller
 {
@@ -182,7 +182,7 @@ class NewsletterController extends Controller
 
     /**
      * Enable silverstripe/spamprotection when installed + configured; a no-op otherwise, so the built-in
-     * honeypot stays the fallback. Copied from silvershop/reviews' guard.
+     * honeypot stays the fallback. Copied from silvershop-suite/reviews' guard.
      */
     protected function applySpamProtection(Form $form): void
     {

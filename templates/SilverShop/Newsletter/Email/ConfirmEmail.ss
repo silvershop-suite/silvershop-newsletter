@@ -2,7 +2,7 @@
      look (white card on a light canvas, #222 accents, shop-name/logo brand, flat black CTA — no coloured chrome).
      Kept self-contained (rather than including core's OrderEmailHeader/Footer) because this module only *suggests*
      silvershop/core and must render on any SilverStripe site; the optional logo brand still lights up via
-     silvershop/store-profile's $SiteConfig.ShopEmailBrand when that module is installed. --%>
+     silvershop-suite/store-profile's $SiteConfig.ShopEmailBrand when that module is installed. --%>
 <!DOCTYPE html>
 <html>
 <head>

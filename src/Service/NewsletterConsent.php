@@ -8,7 +8,7 @@ use SilverShop\Newsletter\Model\NewsletterSubscription;
 
 /**
  * The canonical marketing-consent source of truth for the shop. Sibling modules (abandoned-cart, stock-alerts)
- * call {@see has()} behind a moduleexists('silvershop/newsletter') guard to gate marketing emails on a real,
+ * call {@see has()} behind a moduleexists('silvershop-suite/newsletter') guard to gate marketing emails on a real,
  * explicit, timestamped opt-in — and keep their own transactional-nudge fallback when this module is absent.
  */
 class NewsletterConsent

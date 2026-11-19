@@ -6,7 +6,7 @@
  * integrations — the checkout opt-in checkbox, the account "Email preferences" section and the order email /
  * ecommerce hook points — need silvershop/core, so they are attached here behind class_exists() guards.
  *
- * This mirrors silvershop/vat-compliance's guarded _config.php and keeps the module installable (and testable)
+ * This mirrors silvershop-suite/vat-compliance's guarded _config.php and keeps the module installable (and testable)
  * without silvershop/core, while lighting up the shop surfaces when it is present.
  */
 

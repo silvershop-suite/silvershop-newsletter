@@ -9,12 +9,12 @@ use SilverStripe\Control\HTTPRequest;
 
 /**
  * The published seam between the newsletter core and an email-service-provider (ESP) adapter — the newsletter
- * analogue of silvershop/search's {@see \SilverShop\Search\Backend\SearchBackend}. The core owns the subscriber
+ * analogue of silvershop-suite/search's {@see \SilverShop\Search\Backend\SearchBackend}. The core owns the subscriber
  * model, forms, consent and double-opt-in; a provider maps a subscriber change onto one ESP's list / contact API,
  * and maps that ESP's webhooks back onto a local {@see NewsletterSubscription} status.
  *
- * Adapters live in their own thin module (e.g. silvershop/newsletter-campaignmonitor) so a shop only pulls the one
- * ESP client it uses. A provider is registered in config against a stable key and selected as the active provider;
+ * Adapters live in their own thin module (e.g. silvershop-suite/newsletter-campaignmonitor) so a shop only pulls the
+ * one ESP client it uses. A provider is registered in config against a stable key and selected as the active provider;
  * it only takes effect once {@see isConfigured()} returns true, otherwise the core falls back to its local list.
  */
 interface NewsletterProvider

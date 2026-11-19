@@ -20,7 +20,7 @@ use SilverStripe\SiteConfig\SiteConfig;
 /**
  * The orchestration layer for subscriptions: it upserts a {@link NewsletterSubscription} from any signup surface
  * (footer form, checkout opt-in, account section, import/api), drives the double-opt-in / unsubscribe lifecycle,
- * sends the tokenised confirm email (sender identity resolved via silvershop/store-profile when present), applies
+ * sends the tokenised confirm email (sender identity resolved via silvershop-suite/store-profile when present), applies
  * ESP webhook events back onto the local list, and enqueues a {@link NewsletterSyncJob} on each change.
  *
  * It is the one place the opt-in policy lives, so every surface behaves identically.

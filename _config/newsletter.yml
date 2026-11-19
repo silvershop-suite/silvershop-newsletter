@@ -7,7 +7,7 @@ SilverStripe\Security\Member:
   extensions:
     - SilverShop\Newsletter\Extension\NewsletterMemberExtension
 
-# Newsletter provider registry. ESP adapters (e.g. silvershop/newsletter-campaignmonitor) register themselves
+# Newsletter provider registry. ESP adapters (e.g. silvershop-suite/newsletter-campaignmonitor) register themselves
 # here; the default active provider is the local (no-op) list, so the newsletter works with zero ESP configured.
 # To switch provider, set `active` to the adapter's key once its credentials are in place.
 SilverShop\Newsletter\Provider\NewsletterProviderRegistry:

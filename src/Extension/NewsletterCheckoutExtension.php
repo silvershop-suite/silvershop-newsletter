@@ -12,7 +12,7 @@ use SilverStripe\Forms\CheckboxField;
  * Adds the newsletter opt-in checkbox to the single-page checkout OrderForm via the composable
  * `updateOrderForm` extend hook (core's CheckoutPageController::OrderForm() fires it). This stacks with any
  * other checkout-touching module instead of overriding the SinglePageCheckoutComponentConfig Injector service
- * (which silvershop/vat-compliance already claims) — the plan's "one real checkout design decision".
+ * (which silvershop-suite/vat-compliance already claims) — the plan's "one real checkout design decision".
  *
  * Only attached when silvershop/core is installed (guarded in the module's _config.php), so it is never analysed
  * or loaded on a core-less site. The checkbox is read back by {@link NewsletterOrderExtension::onPlaceOrder()}.

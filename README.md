@@ -6,7 +6,7 @@ for SilverStripe 6 / SilverShop.
 Every shop gets a **working local newsletter list out of the box** — a footer/sidebar signup form, a checkout
 opt-in checkbox, GDPR-friendly double opt-in, one-click unsubscribe, an explicit timestamped marketing-consent
 record, a subscribers admin and report — with **zero ESP configured**. Adding an ESP is purely additive: install
-a thin adapter module (e.g. [`silvershop-suite/newsletter-campaignmonitor`](https://github.com/RVXD/silvershop-newsletter-campaignmonitor)),
+a thin adapter module (e.g. [`silvershop-suite/newsletter-campaignmonitor`](https://github.com/silvershop-suite/silvershop-newsletter-campaignmonitor)),
 set it as the active provider, and every subscriber change is pushed to the ESP as a retryable, auditable
 background job. The ESP owns the campaigns; this module owns capture, consent and sync.
 

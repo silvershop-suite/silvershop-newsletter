@@ -18,7 +18,7 @@ use SilverStripe\Core\Injector\Injector;
  *       campaignmonitor: '%$SilverShop\Newsletter\CampaignMonitor\CampaignMonitorProvider'
  *
  * The active provider only takes effect once it is configured; otherwise the module falls back to the local list.
- * This mirrors silvershop/reviews' ReviewProviderRegistry and silvershop/search's BackendRegistry.
+ * This mirrors silvershop-suite/reviews' ReviewProviderRegistry and silvershop-suite/search's BackendRegistry.
  */
 class NewsletterProviderRegistry
 {
